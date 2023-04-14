@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consociação de exemplos</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script>
+        var nome = "Ruan Venâncio da Silva";
+        var idade = 17
+        var altura = 1.70
+        document.writeln("<center><h1>",document.title,"</h1></center>")
+        document.writeln("nome: ",nome, "<br>");
+        document.writeln("idade: ",idade, "<br>");
+        document.writeln("altura: ",altura, "<br>");
+    
+        //ACID = Alterar Conteúdo por id
+        function ACID(){
+            var novo_cont = document.getElementById("paragrafo");
+            novo_cont.innerHTML = "Hello!";
+        }
+
+        function imprimir(){
+            var tag = document.getElementById("paragrafo");
+            document.writeln(tag,"<br>");
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <button type="button" onclick="alert(
+    'Bem vindo!')"> Clique Aqui!</button>
+    <br><br>
+    <hr>
+
+    <p id="paragrafo">Olá!</p>
+    <button type="button" onclick="ACID()">Translater</button>
+    <br><br>
+    <hr>
+
+    <script>imprimir()</script>
+    <br>
+    <hr>
+
+
+
+</body>
+</html>
